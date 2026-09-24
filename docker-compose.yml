@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  postgres-db:
+    image: ankane/pgvector
+    container_name: postgres-db
+    restart: always
+    environment:
+      POSTGRES_USER: n8nuser
+      POSTGRES_PASSWORD: n8npass
+      POSTGRES_DB: n8ndb
+    ports:
+      - "5432:5432"
+    networks:
+      - n8n-network
+
+networks:
+  n8n-network:
+    driver: bridge

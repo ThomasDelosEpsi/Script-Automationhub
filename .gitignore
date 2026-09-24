@@ -1,0 +1,15 @@
+.env
+.env.*
+*.key
+*.pem
+serviceAccountKey.json
+cookies.txt
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store
+*.log
